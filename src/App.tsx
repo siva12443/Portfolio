@@ -108,6 +108,58 @@ function App() {
         </div>
       </header>
 
+      {/*Skill Section */}
+      <section className="container mx-auto px-6 py-16">
+  <h2 className="text-3xl font-bold mb-12">Skills</h2>
+  <div className="grid md:grid-cols-2 gap-8">
+    {/* Frontend Card */}
+    <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+      <h3 className="text-xl font-semibold mb-4">Frontend</h3>
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        <li>React JS</li>
+        <li>React Native</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Next.js</li>
+        <li>HTML5/CSS3</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+
+    {/* Backend Card */}
+    <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+      <h3 className="text-xl font-semibold mb-4">Backend</h3>
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        <li>ASP.NET Core (C#)</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>RESTful APIs</li>
+      </ul>
+    </div>
+
+    {/* Mobile & Languages Card */}
+    <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+      <h3 className="text-xl font-semibold mb-4">Mobile & Languages</h3>
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        <li>React Native</li>
+        <li>Kivy</li>
+        <li>Python</li>
+        <li>C#</li>
+        <li>VB.NET</li>
+      </ul>
+    </div>
+
+    {/* Tools & DevOps Card */}
+    <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+      <h3 className="text-xl font-semibold mb-4">Tools & DevOps</h3>
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        <li>Git/GitHub</li>
+        <li>Azure DevOps</li>
+        <li>Postman</li>
+        <li>Azure Hosting</li>
+      </ul>
+    </div>
+  </div>
+</section>
       {/* Experience Section */}
       <section className="container mx-auto px-6 py-16" ref={ref}>
         <motion.div
