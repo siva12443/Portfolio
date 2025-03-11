@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Phone, Calendar, MapPin, Building } from 'lucide-react';
 import { motion } from 'framer-motion';
+import ProfileImage from './Mysql.jpeg'
 import { useInView } from 'react-intersection-observer';
 
 function App() {
@@ -26,87 +27,116 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
       {/* Hero Section */}
       <header className="relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
-            animate={{
-              x: [0, 100, 0],
-              y: [0, 50, 0],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            style={{ left: '10%', top: '20%' }}
-          />
-          <motion.div
-            className="absolute w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
-            animate={{
-              x: [0, -50, 0],
-              y: [0, 100, 0],
-              scale: [1, 1.1, 1],
-            }}
-            transition={{
-              duration: 15,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            style={{ right: '10%', top: '10%' }}
-          />
-        </div>
+  {/* Animated background elements */}
+  <div className="container mx-auto px-2 py-16 md:py-16 relative flex-2 items-center justify-between gap-5">
+    <motion.div
+      className="max-w-2xl flex-1"
+      animate={{
+        x: [0, 100, 0],
+        y: [0, 50, 0],
+        scale: [1, 1.2, 1],
+      }}
+      transition={{
+        duration: 20,
+        repeat: Infinity,
+        ease: "linear"
+      }}
+      style={{ left: '10%', top: '20%' }}
+    />
+    <motion.div
+      className="absolute w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
+      animate={{
+        x: [0, -50, 0],
+        y: [0, 100, 0],
+        scale: [1, 1.1, 1],
+      }}
+      transition={{
+        duration: 15,
+        repeat: Infinity,
+        ease: "linear"
+      }}
+      style={{ right: '10%', top: '10%' }}
+    />
+  </div>
 
-        {/* Content */}
-        <div className="container mx-auto px-6 py-16 md:py-32 relative">
-          <motion.div
-            className="max-w-4xl"
-            initial="hidden"
-            animate="visible"
-            variants={stagger}
-          >
-            <motion.div variants={fadeIn}>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                SIVARAMAKRISHNAN S
-              </h1>
-            </motion.div>
-            <motion.div variants={fadeIn}>
-              <h2 className="text-2xl md:text-3xl text-blue-400 font-semibold mb-6">
-                Full Stack Developer
-              </h2>
-            </motion.div>
-            <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-8 text-gray-300">
-              <a href="mailto:sivaramakrishnan3194@gmail.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                <Mail size={20} />
-                sivaramakrishnan3194@gmail.com
-              </a>
-              <a href="tel:7092211201" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                <Phone size={20} />
-                7092211201
-              </a>
-              <span className="flex items-center gap-2">
-                <MapPin size={20} />
-                Chennai, India
-              </span>
-            </motion.div>
-            <motion.p variants={fadeIn} className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Full-stack developer with 3.7+ years of experience in React.js, Next.js, PHP, and MySQL, along with recent expertise in .NET Core and Azure DevOps. Proven ability to design and deploy scalable solutions that enhance performance and user satisfaction.
-            </motion.p>
-            <motion.div variants={fadeIn} className="flex gap-4">
-              <a href="https://github.com" className="p-2 hover:text-blue-400 transition-colors">
-                <Github size={24} />
-              </a>
-              <a href="https://linkedin.com" className="p-2 hover:text-blue-400 transition-colors">
-                <Linkedin size={24} />
-              </a>
-              <a href="mailto:sivaramakrishnan3194@gmail.com" className="p-2 hover:text-blue-400 transition-colors">
-                <Mail size={24} />
-              </a>
-            </motion.div>
-          </motion.div>
+  {/* Content */}
+  <div className="container mx-auto px-6 py-16 md:py-32 relative">
+    {/* Constrain the inner content width and center it */}
+    <div className="flex items-center justify-between max-w-5xl mx-auto">
+      <motion.div
+        className="max-w-4xl"
+        initial="hidden"
+        animate="visible"
+        variants={stagger}
+      >
+        <motion.div variants={fadeIn}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+            SIVARAMAKRISHNAN S
+          </h1>
+        </motion.div>
+        <motion.div variants={fadeIn}>
+          <h2 className="text-2xl md:text-3xl text-blue-400 font-semibold mb-6">
+            Full Stack Developer
+          </h2>
+        </motion.div>
+        <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-8 text-gray-300">
+          <a href="mailto:sivaramakrishnan3194@gmail.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <Mail size={20} />
+            sivaramakrishnan3194@gmail.com
+          </a>
+          <a href="tel:7092211201" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <Phone size={20} />
+            7092211201
+          </a>
+          <span className="flex items-center gap-2">
+            <MapPin size={20} />
+            Chennai, India
+          </span>
+        </motion.div>
+        <motion.p variants={fadeIn} className="text-lg text-gray-300 mb-8 leading-relaxed">
+          Full-stack developer with 3.7+ years of experience in React.js, Next.js, PHP, and MySQL, along with recent expertise in .NET Core and Azure DevOps. Proven ability to design and deploy scalable solutions that enhance performance and user satisfaction.
+        </motion.p>
+        <motion.div variants={fadeIn} className="flex gap-4">
+          <a href="https://github.com/siva12443" className="p-2 hover:text-blue-400 transition-colors">
+            <Github size={24} />
+          </a>
+          <a href="https://linkedin.com" className="p-2 hover:text-blue-400 transition-colors">
+            <Linkedin size={24} />
+          </a>
+          <a href="mailto:sivaramakrishnan3194@gmail.com" className="p-2 hover:text-blue-400 transition-colors">
+            <Mail size={24} />
+          </a>
+        </motion.div>
+      </motion.div>
+
+      {/* Profile Image */}
+      <motion.div 
+        className="hidden md:block flex-shrink-0 relative"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        <div className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-blue-400/30">
+          <img 
+            src={ProfileImage} 
+            alt="Sivaramakrishnan"
+            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all"
+          />
         </div>
-      </header>
+        
+        {/* Floating Icon Version */}
+        <div className="absolute -bottom-6 right-0 bg-gray-800 p-3 rounded-full border-2 border-blue-400/20">
+          <img 
+            src={ProfileImage} 
+            alt="Icon"
+            className="w-12 h-12 rounded-full object-cover"
+          />
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</header>
+
 
       {/*Skill Section */}
       <section className="container mx-auto px-6 py-16">
