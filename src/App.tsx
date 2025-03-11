@@ -100,7 +100,7 @@ function App() {
           <a href="https://github.com/siva12443" className="p-2 hover:text-blue-400 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com" className="p-2 hover:text-blue-400 transition-colors">
+          <a href="https://linkedin.com/in/sivaramakrishnan-s-257294228" className="p-2 hover:text-blue-400 transition-colors">
             <Linkedin size={24} />
           </a>
           <a href="mailto:sivaramakrishnan3194@gmail.com" className="p-2 hover:text-blue-400 transition-colors">
@@ -173,6 +173,7 @@ function App() {
         <li>React Native</li>
         <li>Kivy</li>
         <li>Python</li>
+        <li>Java</li>
         <li>C#</li>
         <li>VB.NET</li>
       </ul>
@@ -252,7 +253,7 @@ function App() {
           <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
             <h3 className="text-xl font-semibold mb-4">Annapoorni Mobile Application</h3>
             <p className="text-gray-300 mb-4">
-              Developed using Kivy and Python, enabling 500+ students to efficiently access daily canteen meal records. Integrated SQLite for data management, reducing manual errors and improving record accuracy.
+              Developed using Kivy and Python, enabling students to efficiently access daily canteen meal records. Integrated SQLite for data management, reducing manual errors and improving record accuracy.
             </p>
           </div>
 
