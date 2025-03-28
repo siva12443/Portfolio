@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Phone, Calendar, MapPin, Building } from 'lucide-react';
+import LinkedInBadge from './Components/LinkedIn';
 import { motion } from 'framer-motion';
 import ProfileImage from './Mysql.jpeg'
 import { useInView } from 'react-intersection-observer';
@@ -22,6 +23,21 @@ function App() {
       }
     }
   };
+
+  useEffect(() => {
+    // Create a script element for the LinkedIn badge
+    const script = document.createElement('script');
+    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
+    script.async = true;
+    script.defer = true;
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+
+    // Cleanup the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
@@ -100,9 +116,7 @@ function App() {
           <a href="https://github.com/siva12443" className="p-2 hover:text-blue-400 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/in/sivaramakrishnan-s-257294228" className="p-2 hover:text-blue-400 transition-colors">
-            <Linkedin size={24} />
-          </a>
+          <LinkedInBadge />
           <a href="mailto:sivaramakrishnan3194@gmail.com" className="p-2 hover:text-blue-400 transition-colors">
             <Mail size={24} />
           </a>
