@@ -110,7 +110,7 @@ function App() {
           </span>
         </motion.div>
         <motion.p variants={fadeIn} className="text-lg text-gray-300 mb-8 leading-relaxed">
-          Full-stack developer with 3.7+ years of experience in React.js, Next.js, PHP, and MySQL, along with recent expertise in .NET Core and Azure DevOps. Proven ability to design and deploy scalable solutions that enhance performance and user satisfaction.
+          Full-stack developer with 3.8+ years of experience in React.js, Next.js, PHP, and MySQL, along with recent expertise in .NET Core and Azure DevOps. Proven ability to design and deploy scalable solutions that enhance performance and user satisfaction.
         </motion.p>
         <motion.div variants={fadeIn} className="flex gap-4">
           <a href="https://github.com/siva12443" className="p-2 hover:text-blue-400 transition-colors">
@@ -173,7 +173,8 @@ function App() {
     <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
       <h3 className="text-xl font-semibold mb-4">Backend</h3>
       <ul className="text-gray-300 list-disc list-inside space-y-2">
-        <li>ASP.NET Core (C#)</li>
+        {/* <li>ASP.NET Core (C#)</li> */}
+        <li>Node.js</li>
         <li>PHP</li>
         <li>MySQL</li>
         <li>RESTful APIs</li>
@@ -187,8 +188,8 @@ function App() {
         <li>React Native</li>
         <li>Kivy</li>
         <li>Python</li>
-        <li>Java</li>
-        <li>C#</li>
+        {/* <li>Java</li> */}
+        {/* <li>C#</li> */}
         <li>VB.NET</li>
       </ul>
     </div>
@@ -200,7 +201,7 @@ function App() {
         <li>Git/GitHub</li>
         <li>Azure DevOps</li>
         <li>Postman</li>
-        <li>Azure Hosting</li>
+        {/* <li>Azure Hosting</li> */}
       </ul>
     </div>
   </div>
